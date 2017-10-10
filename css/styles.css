@@ -1,0 +1,565 @@
+#mobile-portrait-view img {
+  display: none;
+  width: 100%; }
+
+body, h1, h2, h3, p, a {
+  font-family: "Lato", sans-serif; }
+
+#main-container {
+  background: url("http://image2.urlforimages.com/TipaImages/images/christmas-tree-blurry-bg.jpg") center center no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 5px solid #e8e8e8; }
+
+header {
+  padding: 10px;
+  position: relative;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); }
+  header .logo img {
+    display: block;
+    width: 200px; }
+  header .slogan {
+    text-align: right;
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-top: 10px; }
+
+.intro {
+  position: relative;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .intro h1 {
+    text-align: center;
+    margin: 0; }
+  .intro .sub-header {
+    font-size: 2em;
+    color: #707070; }
+  .intro .main-header {
+    font-size: 4.5em;
+    font-weight: 900;
+    color: #389E44;
+    text-transform: uppercase; }
+    .intro .main-header span {
+      font-weight: 900;
+      color: #db1638; }
+  .intro .promo-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #666;
+    margin-top: 20px; }
+
+.calendar {
+  width: 970px;
+  margin: 20px auto;
+  overflow: auto;
+  position: relative;
+  border: 5px solid #ffffff;
+  z-index: 10; }
+  .calendar .date {
+    width: 137.142857px;
+    height: 137px;
+    float: left; }
+    .calendar .date .f.hon {
+      background: url("http://image2.urlforimages.com/TipaImages/images/hon-calendar.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .calendar .date .f.lon {
+      background: url("http://image2.urlforimages.com/TipaImages/images/lon-calendar.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .calendar .date .f.no {
+      background: url("http://image2.urlforimages.com/TipaImages/images/no-calendar.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .calendar .date .f.puer {
+      background: url("http://image2.urlforimages.com/TipaImages/images/puer-calendar.jpg") center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; }
+    .calendar .date .f .f-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 3;
+      transition: background-color .2s; }
+      .calendar .date .f .f-overlay p {
+        opacity: 0;
+        text-align: center;
+        color: #fff;
+        font-weight: 800;
+        font-size: .7em;
+        margin: 100px 0 0 0;
+        padding: 0;
+        transition: opacity .2s; }
+    .calendar .date .f .num, .calendar .date .f .circle {
+      position: relative;
+      z-index: 4; }
+    .calendar .date:hover .f-overlay {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .calendar .date:hover .f-overlay p {
+      opacity: 1; }
+    .calendar .date .day {
+      padding: 5px;
+      font-weight: 600;
+      height: 100%;
+      cursor: pointer;
+      color: #707070;
+      font-size: 2em; }
+      .calendar .date .day .circle {
+        border-radius: 50%;
+        height: 13px;
+        width: 13px;
+        padding: 0;
+        margin: 10px;
+        float: right; }
+      .calendar .date .day.current .f-overlay {
+        background: none; }
+        .calendar .date .day.current .f-overlay p {
+          color: #ffffff;
+          text-align: center;
+          font-size: .75em;
+          margin-top: 60px; }
+      .calendar .date .day.na {
+        cursor: default; }
+        .calendar .date .day.na .circle {
+          background-color: #db1638; }
+        .calendar .date .day.na.fa {
+          cursor: default; }
+          .calendar .date .day.na.fa .circle {
+            background-color: #389E44; }
+      .calendar .date .day.active .circle {
+        background-color: #389E44; }
+      .calendar .date .day.wh {
+        background: #fff;
+        outline: none;
+        cursor: default; }
+      .calendar .date .day.nd {
+        background-color: #fff; }
+        .calendar .date .day.nd .num {
+          color: #666; }
+      .calendar .date .day .num {
+        width: 50%;
+        padding: 0;
+        margin: 0;
+        color: #ffffff;
+        float: left; }
+    .calendar .date .info {
+      background-color: #1e88e5;
+      text-align: center;
+      cursor: pointer;
+      color: #ffffff;
+      padding-top: 25px;
+      font-weight: 600; }
+      .calendar .date .info.hon {
+        background: url("http://image2.urlforimages.com/TipaImages/images/hon-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .date .info.lon {
+        background: url("http://image2.urlforimages.com/TipaImages/images/lon-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .date .info.no {
+        background: url("http://image2.urlforimages.com/TipaImages/images/no-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .date .info.puer {
+        background: url("http://image2.urlforimages.com/TipaImages/images/puer-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .date .info a {
+        color: #ffffff;
+        font-weight: 600;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        z-index: 2; }
+      .calendar .date .info .city-name {
+        font-size: 1.25em;
+        background-color: #1e88e5;
+        padding: 5px;
+        margin-bottom: 20px; }
+      .calendar .date .info .promo-code {
+        font-weight: 900;
+        padding: 10px;
+        width: 100px;
+        margin: 0 auto;
+        border: 3px dashed #e8e8e8; }
+    .calendar .date .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2); }
+  .calendar .section {
+    height: 137px;
+    float: left; }
+    .calendar .section .f {
+      overflow: auto; }
+      .calendar .section .f.nyc {
+        background: url("http://image2.urlforimages.com/TipaImages/images/nyc-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.par {
+        background: url("http://image2.urlforimages.com/TipaImages/images/par-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.mia {
+        background: url("http://image2.urlforimages.com/TipaImages/images/mia-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.can {
+        background: url("http://image2.urlforimages.com/TipaImages/images/can-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.lv {
+        background: url("http://image2.urlforimages.com/TipaImages/images/lv-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.orl {
+        background: url("http://image2.urlforimages.com/TipaImages/images/orl-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.bos {
+        background: url("http://image2.urlforimages.com/TipaImages/images/bos-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f.tor {
+        background: url("http://image2.urlforimages.com/TipaImages/images/tor-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .f .current-name {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+        cursor: pointer;
+        transition: background-color .2s; }
+        .calendar .section .f .current-name p {
+          text-align: center;
+          color: #fff;
+          font-weight: 800;
+          font-size: 1.5em;
+          margin: 100px 0 0 0;
+          padding: 0;
+          transition: opacity .2s; }
+      .calendar .section .f .f-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        z-index: 3;
+        transition: background-color .2s; }
+        .calendar .section .f .f-overlay p {
+          opacity: 0;
+          text-align: center;
+          color: #fff;
+          font-weight: 800;
+          font-size: 1.5em;
+          margin: 100px 0 0 0;
+          padding: 0;
+          transition: opacity .2s; }
+    .calendar .section:hover .f-overlay {
+      background-color: rgba(0, 0, 0, 0.1); }
+    .calendar .section:hover .f-overlay p {
+      opacity: 1; }
+    .calendar .section.one {
+      width: 548.571428px; }
+    .calendar .section.two {
+      width: 274.282px; }
+    .calendar .section .section-date {
+      width: 137.142857px;
+      height: 137px;
+      float: left; }
+    .calendar .section .date {
+      position: relative;
+      z-index: 4; }
+    .calendar .section .day {
+      font-weight: 600;
+      height: 100%;
+      color: #707070;
+      font-size: 2em;
+      cursor: pointer; }
+      .calendar .section .day.current .f-overlay {
+        background: none; }
+        .calendar .section .day.current .f-overlay p {
+          color: #ffffff;
+          text-align: center;
+          font-size: .75em;
+          margin-top: 60px; }
+    .calendar .section .info {
+      background-color: #db1638;
+      padding-top: 25px;
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      position: relative; }
+      .calendar .section .info.nyc {
+        background: url("http://image2.urlforimages.com/TipaImages/images/nyc-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.par {
+        background: url("http://image2.urlforimages.com/TipaImages/images/par-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.mia {
+        background: url("http://image2.urlforimages.com/TipaImages/images/mia-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.can {
+        background: url("http://image2.urlforimages.com/TipaImages/images/can-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.lv {
+        background: url("http://image2.urlforimages.com/TipaImages/images/lv-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.orl {
+        background: url("http://image2.urlforimages.com/TipaImages/images/orl-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.bos {
+        background: url("http://image2.urlforimages.com/TipaImages/images/bos-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info.tor {
+        background: url("http://image2.urlforimages.com/TipaImages/images/tor-calendar.jpg") center center no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover; }
+      .calendar .section .info a {
+        color: #ffffff;
+        font-weight: 600;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-decoration: none;
+        width: 100%;
+        height: 100%;
+        z-index: 2; }
+      .calendar .section .info .city-name {
+        color: #ffffff;
+        margin: 0;
+        background-color: #1e88e5;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 1.5em;
+        font-weight: 800; }
+      .calendar .section .info .promo-code {
+        font-weight: 900;
+        color: #ffffff;
+        padding: 6px;
+        font-size: 2em;
+        width: 200px;
+        margin: 0 auto;
+        border: 2px dashed #dddddd; }
+      .calendar .section .info .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2); }
+
+.cta {
+  padding: 20px 0; }
+  .cta h2 {
+    text-align: center;
+    font-weight: 700;
+    color: #222222; }
+  .cta p {
+    text-align: center;
+    font-size: 1.35em;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .cta p span {
+      font-weight: 900;
+      padding: 5px;
+      color: #389E44;
+      border: 2px dashed #389E44;
+      font-size: 1.45em; }
+  .cta a {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    font-size: 1.5em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #db1638; }
+    .cta a:hover {
+      text-decoration: none; }
+
+.border {
+  border-top: 1px solid #e8e8e8; }
+
+.disclaimer {
+  text-align: center;
+  font-size: .8em;
+  color: #666; }
+
+/* Media Queries */
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+/*==========  Non-Mobile First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1500px) {
+  #main-container {
+    background: url("http://image2.urlforimages.com/TipaImages/images/christmas-tree-blurry-bg.jpg") center bottom no-repeat;
+    background-size: cover;
+    overflow: auto;
+    position: relative; } }
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  header .logo img {
+    margin: 0 auto; }
+  header .slogan p {
+    display: none; }
+
+  .intro .main-header {
+    font-size: 3.75em; }
+  .intro .promo-text {
+    color: #222222; }
+
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.7); } }
+@media only screen and (max-width: 960px) {
+  .calendar {
+    width: 779px;
+    height: auto;
+    overflow: hidden; }
+    .calendar .date {
+      width: 109.714286px; }
+    .calendar .section.two {
+      width: 219.428572px; } }
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .calendar {
+    width: 491px;
+    height: auto;
+    overflow: hidden; }
+    .calendar .date {
+      width: 68.5714286px;
+      height: 68.5px; }
+      .calendar .date .info .city-name {
+        font-size: .7em;
+        margin-bottom: 10px; }
+      .calendar .date .info .promo-code {
+        font-size: .7em;
+        padding: 5px;
+        margin-top: 10px;
+        width: 90%; }
+      .calendar .date .day .num {
+        font-size: .5em; }
+      .calendar .date .day .circle {
+        margin: 2px;
+        height: 8px;
+        width: 8px; }
+      .calendar .date .day.current .f-overlay p {
+        margin-top: 40px;
+        font-size: .35em; }
+      .calendar .date .f .f-overlay p {
+        font-size: .4em;
+        margin-top: 50px; }
+    .calendar .section {
+      height: 68.5px; }
+      .calendar .section .info {
+        padding: 0;
+        margin: 0; }
+      .calendar .section .f .current-name p {
+        font-size: .9em;
+        margin-top: 40px; }
+      .calendar .section .f .f-overlay p {
+        font-size: .75em;
+        margin-top: 50px; }
+      .calendar .section.two {
+        width: 137.142857px; }
+      .calendar .section .info .city-name {
+        padding: 5px;
+        font-size: 1em;
+        margin-bottom: 7px; }
+      .calendar .section .info .promo-code {
+        padding: 0;
+        width: 50%;
+        font-size: 1em; } }
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  #main-container {
+    background: #ffffff; }
+
+  .intro {
+    padding-bottom: 50px; }
+    .intro .sub-header {
+      font-size: 1.25em; }
+    .intro .main-header {
+      font-size: 3em; }
+    .intro .promo-text {
+      display: none; } }
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=styles.css.map */
